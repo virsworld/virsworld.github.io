@@ -13,3 +13,7 @@ https://github.com/varadbhogayata/varadbhogayata.github.io
 ## A3
 <img width="1245" height="985" alt="image" src="https://github.com/user-attachments/assets/c0b8966c-58e3-41d0-a1bf-ac1fa9c2434d" />
 <img width="1790" height="1001" alt="image" src="https://github.com/user-attachments/assets/042f3640-de0d-4cf4-b505-3644237c5c8a" />
+
+## A4
+<img width="1246" height="975" alt="image" src="https://github.com/user-attachments/assets/55b51185-1dc2-4b0c-9d44-b1218be2e3ab" />
+<img width="1790" height="1001" alt="image" src="https://github.com/user-attachments/assets/6b4ad679-5f4d-4796-a455-418cbaf314ab" />

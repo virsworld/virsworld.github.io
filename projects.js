@@ -62,6 +62,38 @@ const projects = [
                 </div>
               </div>
             </div>
+        `,
+        `
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/tcdb.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">TestcaseDB<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Made for programming students to ensure their program can handle more than the public test cases available. Students should create their own test cases but use this as a resource to check out what their peers have come up with and share their testing. I plan on continuing to add more features for fun :D (like editing the uploaded test cases)
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> React.js, JavaScript, Node.js</li>
+                  <li>Upload/delete test cases.</li>
+                  <li>View other peoples test cases</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://testcasedb.netlify.app" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
         `];
 
 document.addEventListener("DOMContentLoaded", () => {

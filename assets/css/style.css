@@ -3,9 +3,13 @@
   width:130px;
   height:130px;
   overflow: hidden;
+  /* display: inline-block; */
+  
+  
+  /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 0, 0, 0.4); 
+  border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -16,7 +20,9 @@
 }
 
 .tracker {
+  /* visibility: hidden; */
   position: fixed;
+  /* margin-inline-end: auto;  */
   bottom: 0; 
   right: 0;
 }
@@ -26,6 +32,7 @@
   margin: 0 auto;
   width: auto;
   text-align: inherit;
+  /* padding: 10px; */
 }
 
 .icon-btn {
@@ -47,7 +54,7 @@
 }
 
 .linkedin {
-  color: #444;
+  color: #0077b5;
 }
 
 .angellist {
@@ -60,7 +67,7 @@
 }
 
 .linkedin:hover {
-  background-color: #444;
+  background-color: #0077b5;
 }
 
 .angellist:hover {
@@ -77,7 +84,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: black;
+  color: #00796b;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -86,6 +93,11 @@
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+/* .readme:hover{
+  color: white;
+  background-color: #00796b;
+} */
 
 .contactme {
   position: relative;
@@ -103,28 +115,47 @@
 }
 
 .contactme:hover{
-  color: black;
+  color: #00796b;
   background-color: white;
 }
-
 /* main body */
+
+/* body-color */
 
 body {
   color: #333;
   font-size: 18px;
 }
 
-/* links */
+/* body {
+  color: black;
+  font-size: 18px;
+} */
+
+/* main a -- links */
+
+/* a {
+  color: #009688;
+} */
 
 a {
-  color: black;
+  color: #004d40;
 }
 
-/* blockquote */
+/* main blockqoute */
+
+/* blockquote {
+  border-left: 5px solid #795548;
+  color: #795548;
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+} */
 
 blockquote {
-  border-left: 5px solid #444;
-  color: #444;
+  border-left: 5px solid #795548;
+  color: #795548;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -140,13 +171,19 @@ blockquote * {
   text-align: center;
 }
 
-/* nav */
+/* main nav */
 
 nav {
   background: white;
   box-shadow: none;
   height: 0;
 }
+
+/* nav {
+  background: rgb(149, 126, 212);
+  box-shadow: none;
+  height: 0;
+} */
 
 nav i {
   padding: 0 15px;
@@ -155,6 +192,11 @@ nav i {
 }
 
 /* main */
+
+/* main {
+  background: url(../../assets/img/bg.png) repeat;
+  padding-left: 190px;
+} */
 
 main {
   background: url(../../assets/img/bg.png) repeat;
@@ -184,19 +226,34 @@ ul.side-nav li {
   padding: 0;
 }
 
+/* ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(48, 122, 207);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+} */
+
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: black;
+  color: rgb(16, 202, 56);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
 }
 
-ul.table-of-contents li.logo a.active, 
-ul.table-of-contents li.logo a:hover {
+ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
 }
+
+/* ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+} */
 
 ul.side-nav.fixed li.logo {
   background-color: #fafafa;
@@ -211,14 +268,12 @@ ul.side-nav.fixed li.logo a {
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, 
-ul.table-of-contents li:not(.logo) a:hover {
+ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
   background-color: #fafafa;
-  border-left: 3px solid black;
+  border-left: 3px solid;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, 
-ul#slide-out li:not(.logo) a span {
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
   color: #333 !important;
 }
 
@@ -256,29 +311,43 @@ h3 {
   height: 100vh;
 }
 
-/* Intro section */
+/* Original */
+
+/* #intro.section {
+  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
+  position: relative;
+} */
 
 #intro.section {
-  background: #fff repeat;
+  background: #a7ffeb repeat;
   position: relative;
 }
 
 #intro.section .container {
-  color: black;
+  color: white;
   font-weight: 200;
   left: 0;
   position: absolute;
   top: 0;
 }
 
-#intro.section .container *:not(span) {
+/* #intro.section .container *:not(span) {
   font-weight: 300;
   line-height: 150%;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  padding: 0 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+} */
+
+#intro.section .container *:not(span) {
+  font-weight: 300;
+  /* font-weight: 400; */
+  line-height: 150%;
+  /* padding: 0 0px; */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #24305e;
 }
 
 #intro.section .teal {
@@ -294,9 +363,10 @@ h3 {
   width: 100%;
 }
 
-/* ripple */
 .waves-effect.waves-blue .waves-ripple {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* The alpha value allows the text and background color
+   of the button to still show through. */
+  background-color: rgba(33, 150, 243, 0.2);
 }
 
 .card {
@@ -313,7 +383,7 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ffab40;
 }
 
 .card li a:hover {
@@ -395,8 +465,14 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+/* main a.hoverline */
+
+/* a.hoverline:hover {
+  border-bottom: 3px solid #24305e !important;
+} */
+
 a.hoverline:hover {
-  border-bottom: 3px solid black !important;
+  border-bottom: 3px solid #004d40 !important;
 }
 
 #skills .card.large {
@@ -469,16 +545,25 @@ small {
   color: #666 !important;
 }
 
-/* black accents */
+/* main .teal-text */
+
 .teal-text {
-  color: black !important;
+  color: #008073 !important;
 }
+
+/* .teal-text {
+  color: #0b5e86 !important;
+} */
+
+/* .teal */
 
 .teal {
-  background-color: black !important;
+  background-color: #008073 !important;
 }
 
-/* responsiveness */
+/* .teal {
+  background-color: #00695c !important;
+} */
 
 @media (min-width: 1200px) {
   #experience .container {
@@ -516,7 +601,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: black;
+    color: #009688;
     height: 56px;
     line-height: 56px;
   }

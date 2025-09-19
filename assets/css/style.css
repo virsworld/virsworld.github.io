@@ -427,7 +427,7 @@ h3 {
 
 .card-action span {
   font-size: 85%;
-  color: #666;
+  color: black;
 }
 
 .card ul {
@@ -441,7 +441,7 @@ h3 {
 }
 
 .card ul li li {
-  color: #666;
+  color: black;
   font-size: 13px;
 }
 
@@ -542,7 +542,7 @@ small {
 }
 
 .grey-text {
-  color: #666 !important;
+  color: black !important;
 }
 
 /* main .teal-text */
@@ -558,7 +558,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #ffd000 !important;
+  background-color: #ffb000 !important;
 }
 
 /* .teal {

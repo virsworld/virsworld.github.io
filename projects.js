@@ -30,7 +30,7 @@ const projects = {
                 </div>
               </div>
             </div>`,
-    "Password Cracker": `<div class="col s12 m6 l4">
+    "Password Cracker": `
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/cracker_project.png" style="height: 100%; width: 100%" class="activator" />
@@ -61,7 +61,7 @@ const projects = {
                 </div>
               </div>
             </div>
-          </div>`
+            `
 }
 
 document.addEventListener("DOMContentLoaded", () => {

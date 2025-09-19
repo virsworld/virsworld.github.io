@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const more_btn = document.createElement('button');
     more_btn.style.width = "100%";
     more_btn.style.height = "100%";
-    more_btn.innerText = "See More Projects";
+    more_btn.innerText = "Load More";
     more_btn.classList = "btn waves-effect waves-light teal";
 
     more_btn_card.appendChild(more_btn);

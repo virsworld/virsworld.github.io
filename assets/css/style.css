@@ -472,7 +472,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid black !important;
+  border-bottom: 3px solid #ffb000 !important;
 }
 
 #skills .card.large {

@@ -75,6 +75,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
     projects_section.appendChild(container);
     container.appendChild(row);
     project.classList = "col s12 m6 l4";
-    project.innerHTML = projects["Ene GIS"];
+    project.innerHTML = Array(projects)[0];
     row.appendChild(project);
+
+    const more_btn = document.createElement('button');
+    more_btn.innerText = "See More Projects"
+    more_btn.onclick = () => {
+        Array(projects).forEach((element, i) => {
+            if (i) {
+                project.innerHTML = Array(projects)[i];
+                row.appendChild(project);
+            }
+        });
+        more_btn.style.display = 'none';
+    }
 });

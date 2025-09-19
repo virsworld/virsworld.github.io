@@ -1,5 +1,5 @@
 const projects = {
-    "Ene GIS": `<div class="col s12 m6 l4">
+    "Ene GIS": `
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="music streaming app" src="/assets/img/gis_cover.png" style="height: 100%; width: 100%" class="activator" />
@@ -29,8 +29,7 @@ const projects = {
                       class="fa fa-external-link"></i></a>
                 </div>
               </div>
-            </div>
-          </div>`,
+            </div>`,
     "Password Cracker": `<div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -70,10 +69,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const title = document.createElement('h3');
     const container = document.createElement('div');
     const row = document.createElement('div');
+    const project = document.createElement('div');
     
     title.innerText = "Projects";
     projects_section.appendChild(container);
     container.appendChild(row);
-
-    row.appendChild(projects["Ene GIS"]);
+    project.classList = "col s12 m6 l4";
+    project.innerHTML = projects["Ene GIS"];
+    row.appendChild(project);
 });

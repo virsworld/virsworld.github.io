@@ -83,6 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const more_btn = document.createElement('button');
     more_btn.innerText = "See More Projects"
+    more_btn.classList = "col s12 m6 l4";
+    row.appendChild(more_btn);
+    
     more_btn.onclick = () => {
         projects.forEach((element, i) => {
             if (i) {
@@ -94,5 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         more_btn.style.display = 'none';
     }
-    projects_section.appendChild(more_btn);
 });

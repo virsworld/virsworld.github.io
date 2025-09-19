@@ -64,29 +64,34 @@ const projects = {
           </div>`
 }
 
-document.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener("DOMContentLoaded", () => {
     const projects_section = document.getElementById('projects');
     const title = document.createElement('h3');
     const container = document.createElement('div');
     const row = document.createElement('div');
     const project = document.createElement('div');
     
+    title.classList = "page-title white-text teal";
     title.innerText = "Projects";
+    projects_section.appendChild(title);
     projects_section.appendChild(container);
     container.appendChild(row);
     project.classList = "col s12 m6 l4";
-    project.innerHTML = Array(projects)[0];
+    project.innerHTML = Object.values(projects)[0];
     row.appendChild(project);
 
     const more_btn = document.createElement('button');
     more_btn.innerText = "See More Projects"
     more_btn.onclick = () => {
-        Array(projects).forEach((element, i) => {
+        Object.values(projects).forEach((element, i) => {
             if (i) {
-                project.innerHTML = Array(projects)[i];
-                row.appendChild(project);
+                const projDiv = document.createElement('div');
+                projDiv.classList = "col s12 m6 l4";
+                projDiv.innerHTML = element;
+                row.appendChild(projDiv);
             }
         });
         more_btn.style.display = 'none';
     }
+    projects_section.appendChild(more_btn);
 });

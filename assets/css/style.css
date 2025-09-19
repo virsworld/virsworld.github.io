@@ -58,7 +58,7 @@
 }
 
 .angellist {
-  color: grey;
+  color: black;
 }
 
 .icon-btn:hover {
@@ -71,7 +71,7 @@
 }
 
 .angellist:hover {
-  background-color: grey;
+  background-color: black;
 }
 
 .github:hover {

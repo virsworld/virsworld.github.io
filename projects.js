@@ -1,5 +1,5 @@
-const projects = {
-    "Ene GIS": `
+const projects = [
+        `
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="music streaming app" src="/assets/img/gis_cover.png" style="height: 100%; width: 100%" class="activator" />
@@ -29,8 +29,9 @@ const projects = {
                       class="fa fa-external-link"></i></a>
                 </div>
               </div>
-            </div>`,
-    "Password Cracker": `
+            </div>
+        `,
+        `
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/cracker_project.png" style="height: 100%; width: 100%" class="activator" />
@@ -61,8 +62,7 @@ const projects = {
                 </div>
               </div>
             </div>
-            `
-}
+        `];
 
 document.addEventListener("DOMContentLoaded", () => {
     const projects_section = document.getElementById('projects');
@@ -77,13 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
     projects_section.appendChild(container);
     container.appendChild(row);
     project.classList = "col s12 m6 l4";
-    project.innerHTML = Object.values(projects)[0];
+    project.innerHTML = projects[0];
+    row.classList = "row";
     row.appendChild(project);
 
     const more_btn = document.createElement('button');
     more_btn.innerText = "See More Projects"
     more_btn.onclick = () => {
-        Object.values(projects).forEach((element, i) => {
+        projects.forEach((element, i) => {
             if (i) {
                 const projDiv = document.createElement('div');
                 projDiv.classList = "col s12 m6 l4";

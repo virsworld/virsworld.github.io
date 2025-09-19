@@ -1,7 +1,7 @@
 const projects = [
   {
     img: "/assets/img/gis_cover.png",
-    alt: "music streaming app",
+    alt: "GIS app",
     title: "Ene GIS",
     description: "Environmentally conscious Geographic Information System (GIS).",
     tools: "C++",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     img: "/assets/img/cracker_project.png",
-    alt: "quiz app",
+    alt: "Password cracking app",
     title: "Password Cracker",
     description: "Attempts to crack user passwords taken from leaked hash data by hashing common passwords and cross-referencing.",
     tools: "Verilog, ModelSim",
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     img: "/assets/img/tcdb.png",
-    alt: "quiz app",
+    alt: "Test case constribution app",
     title: "TestcaseDB",
     description: "Made for programming students to ensure their program can handle more than the public test cases available. Students should create their own test cases but use this as a resource to check out what their peers have come up with and share their testing. I plan on continuing to add more features for fun :D (like editing the uploaded test cases)",
     tools: "React.js, JavaScript, Node.js",

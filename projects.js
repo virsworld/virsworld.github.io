@@ -87,12 +87,12 @@ document.addEventListener("DOMContentLoaded", () => {
     more_btn_card.classList = "card medium center-align";
 
     const more_btn = document.createElement('button');
-    more_btn.innerText = "See More Projects"
+    more_btn.innerText = "See More Projects";
     more_btn.classList = "btn waves-effect waves-light teal";
 
     more_btn_card.appendChild(more_btn);
     more_btn_col.appendChild(more_btn_card);
-    row.appendChild(more_btn_card);
+    row.appendChild(more_btn_col);
     
     more_btn.onclick = () => {
         projects.forEach((element, i) => {

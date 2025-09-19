@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const project = document.createElement('div');
     
     title.classList = "page-title white-text teal";
-    title.innerText = "Projects";
+    title.innerText = "Recent Projects";
     projects_section.appendChild(title);
     projects_section.appendChild(container);
     container.appendChild(row);
